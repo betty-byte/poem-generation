@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -13,7 +15,7 @@
       </header>
 
       <main>
-        <form>
+        <form id="generator-form">
           <input
             type="text"
             placeholder="Enter topic of the poem"
@@ -24,10 +26,7 @@
           />
           <input type="submit" class="submit-instruction" />
         </form>
-        <div id="my-poem">
-          This could be our poem <br />
-          but <br />we dont have hours
-        </div>
+        <div class="actual-poem" id="actual-poem"></div>
       </main>
       <footer>
         This project was coded by <strong>Betty Tsotetsi</strong>,
