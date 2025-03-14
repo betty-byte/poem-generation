@@ -15,18 +15,23 @@
       </header>
 
       <main>
-        <form id="generator-form">
-          <input
-            type="text"
-            placeholder="Enter topic of the poem"
-            autofocus
-            required
-            autocomplete="off"
-            class="describe-it"
-          />
-          <input type="submit" class="submit-instruction" />
-        </form>
-        <div class="actual-poem" id="actual-poem"></div>
+        <div class="form-container">
+          <form id="generator-form">
+            <input
+              type="text"
+              placeholder="Enter the topic of a poem you want to generate"
+              autofocus
+              required
+              autocomplete="off"
+              class="describe-it"
+            />
+            <input type="submit" class="submit-instruction" />
+          </form>
+          <div class="hint"><em>i.e: Love, Beauty, Hapiness</em></div>
+        </div>
+        <div class="actual-poem hidden" id="actual-poem">
+          <div class="loader"></div>
+        </div>
       </main>
       <footer>
         This project was coded by <strong> Betty Tsotetsi</strong>, is

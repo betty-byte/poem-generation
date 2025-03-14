@@ -17,13 +17,22 @@ h1 {
 header {
   margin-bottom: 30px;
 }
-form {
+.form-container {
   padding: 30px;
   background: pink;
   border-radius: 10px;
-  display: flex;
   box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
   margin-bottom: 30px;
+}
+form {
+  display: flex;
+}
+.hint {
+  line-height: 1.5;
+  font-size: 12px;
+  color: rgb(38, 57, 118);
+  margin: 3px;
+  opacity: 0.6;
 }
 .describe-it {
   padding: 16px;
@@ -61,4 +70,33 @@ a {
 }
 .actual-poem strong {
   color: palevioletred;
+}
+.hidden {
+  display: none;
+}
+
+.loader {
+  width: 15px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  animation: l5 1s infinite linear alternate;
+  margin: 20px;
+}
+@keyframes l5 {
+  0% {
+    box-shadow: 20px 0 rgb(38, 57, 118), -20px 0 palevioletred;
+    background: rgb(38, 57, 118);
+  }
+  33% {
+    box-shadow: 20px 0 rgb(38, 57, 118), -20px 0 palevioletred;
+    background: palevioletred;
+  }
+  66% {
+    box-shadow: 20px 0 palevioletred, -20px 0 rgb(38, 57, 118);
+    background: palevioletred;
+  }
+  100% {
+    box-shadow: 20px 0 palevioletred, -20px 0 rgb(38, 57, 118);
+    background: rgb(38, 57, 118);
+  }
 }
